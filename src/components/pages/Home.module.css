@@ -1,0 +1,141 @@
+.home {
+	height: calc(100vh - 5rem);
+	scroll-margin-top: 5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	padding: 0.5rem;
+	height: 85%;
+	justify-content: center;
+}
+
+.introduction {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 70%;
+	text-align: center;
+}
+
+.logo_wrapper {
+	flex: 1;
+}
+
+.logo {
+	object-fit: contain;
+	width: 90%;
+	height: auto;
+}
+
+.start {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	justify-content: center;
+	align-items: center;
+	margin-top: auto;
+	flex: 1;
+	padding-bottom: 1rem;
+	visibility: hidden;
+}
+
+.start__icon_wrapper {
+	width: fit-content;
+	padding: 1rem;
+	border-radius: 50%;
+	box-shadow: 0 2px 5px rgba(255, 166, 0, 0.304);
+}
+
+.start__icon {
+	object-fit: contain;
+	width: 100%;
+	height: auto;
+}
+
+.links {
+	margin-top: 1rem;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.projects_btn {
+	font-size: clamp(0.8rem, 3vw, 1rem);
+	padding: 0.5em 1em;
+	border: 3px solid orange;
+	background-color: transparent;
+	color: whitesmoke;
+	border-radius: 0.3em;
+	transition: transform 0.3s;
+}
+
+.projects_btn:hover {
+	transform: translateY(-10%);
+	box-shadow: 0 2px 5px rgba(255, 166, 0, 0.304);
+	background-color: orange;
+	cursor: pointer;
+}
+
+@media screen and (width > 870px) {
+	.hero {
+		flex-direction: row;
+	}
+
+	.introduction {
+		width: 60%;
+		align-items: flex-start;
+		text-align: left;
+		height: 100%;
+	}
+
+	.start {
+		visibility: visible;
+	}
+}
+
+.orange {
+	color: orange;
+}
+
+.bigtext {
+	font-size: clamp(2rem, 10vw, 5rem);
+}
+
+.subtext {
+	font-size: clamp(1rem, 5vw, 2rem);
+}
+
+.start__icon:hover {
+	animation: bounce 1s ease-in infinite;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+
+	25% {
+		transform: translateY(10%);
+	}
+
+	50% {
+		transform: translateY(0);
+	}
+
+	75% {
+		transform: translateY(-10%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}

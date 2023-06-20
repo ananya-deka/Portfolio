@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: linear-gradient(110deg, #14213d 60%, #1f5673 60%);
+	color: whitesmoke;
+	font-family: "Roboto Mono", monospace;
+	overflow-x: hidden;
+}
+
+a,
+button {
+	font: inherit;
+	text-decoration: none;
+	color: inherit;
+}
+
+a:visited {
+	color: inherit;
+}
+
+img {
+	display: block;
+}

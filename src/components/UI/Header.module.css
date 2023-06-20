@@ -1,0 +1,29 @@
+.header {
+	margin-bottom: 2rem;
+	color: orange;
+	font-size: clamp(2rem, 3vw, 3rem);
+	visibility: hidden;
+}
+
+.animate {
+	visibility: visible;
+	animation: slide-in-right 0.8s ease-in 1 forwards;
+}
+
+@media screen and (width > 870px) {
+	.header {
+		margin-bottom: 4rem;
+	}
+}
+
+@keyframes slide-in-right {
+	0% {
+		transform: translateX(-20%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
