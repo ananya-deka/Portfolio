@@ -1,7 +1,7 @@
 import classes from "./Contact.module.css";
 import { useState, useEffect, useRef } from "react";
 import useObserveCurrentPage from "../../hooks/useObserveCurrentPage";
-import Socials from "../UI/Socials";
+import Socials from "../content/Socials";
 import Header from "../UI/Header";
 
 const Contact = ({ setCurrentPage }) => {

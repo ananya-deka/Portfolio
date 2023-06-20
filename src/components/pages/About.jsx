@@ -75,7 +75,11 @@ const About = ({ setCurrentPage }) => {
 				</div>
 			</div>
 			<div className={classes.skills}>
-				<ul className={classes.skills__list}>
+				<ul
+					className={`${classes.skills__list} ${
+						isIntersecting ? classes.animate : null
+					}`}
+				>
 					{skills.map((skill) => (
 						<li className={classes.skill} key={skill.name}>
 							<img

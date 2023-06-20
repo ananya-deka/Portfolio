@@ -2,7 +2,7 @@ import classes from "./Home.module.css";
 import animatedMe from "../../assets/icons/me.svg";
 import { useEffect, useRef, useState } from "react";
 import useObserveCurrentPage from "../../hooks/useObserveCurrentPage";
-import Socials from "../UI/Socials";
+import Socials from "../content/Socials";
 import startIcon from "../../assets/icons/start.svg";
 
 const Home = ({ setCurrentPage }) => {
